@@ -24,19 +24,19 @@ Small decorator that enables [Bootstrap Tags Input](https://github.com/timschlec
 
 To use, add decorator tagsinput. For example:
     
-'''html
+```html
 <select multiple name="tags" decorator="tagsinput"></select>
-'''
+```
 
 Parameters can be set either in template, added after decorator, or in javascript code:
 Template:
-'''html
+```html
 <select multiple name="tags" decorator="tagsinput:{allowDuplicates: true, itemValue: 'value', itemText: 'text'}"></select>
-'''
+```
 JS:
-'''js
+```js
 Ractive.decorators.tagsinput.options = { allowDuplicates: true, itemValue: 'value', itemText: 'text' };
-'''
+```
 
 If you need events, they are in [another plugin](https://github.com/performante/ractive-events-bootstraptags)
 

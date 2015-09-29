@@ -5,7 +5,7 @@
 
 	Version 0.1
 
-	Small decorator that enables Bootstrap Tags Input (https://github.com/timschlechter/bootstrap-tagsinput).
+	Small decorator plugin that enables Bootstrap Tags Input (https://github.com/timschlechter/bootstrap-tagsinput).
 
 	To use, add decorator tagsinput. For example:
 		
