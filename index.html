@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+	<meta charset='utf-8'>
+	<title>Ractive.js bootstraptags decorator plugin</title>
+
+	<!-- CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='demo/main.css'>
+
+	<!-- TODO add styles specific to this demo -->
+	<style type='text/css'>
+
+	</style>
+</head>
+
+<body>
+
+	<!-- if the project is on GitHub, add a fork me button! -->
+	<a class='forkme' href='https://github.com/Performante/ractive-decorators-bootstraptags'>Fork me on GitHub</a>
+
+	<header>
+		<h1>Ractive.js bootstraptags decorator plugin</h1>
+		<p class='strap'>
+			<span class='download'>download: <a href='https://github.com/Performante/ractive-decorators-bootstraptags'>ractive-decorators-bootstraptags.js</a></span>
+			<span class='more-plugins'>more plugins at <a href='http://docs.ractivejs.org/latest/plugins'>docs.ractivejs.org/latest/plugins</a></span>
+		</p>
+	</header>
+
+	<main>
+		<p>Small decorator that enables Bootstrap Tags Input</p>
+
+		<!--<div id='demo' class='clearfix'></div>-->
+
+		<pre id='demo-template-view' class='prettyprint lang-html'></pre>
+		<pre id='demo-code-view' class='prettyprint lang-js'></pre>
+	</main>
+
+	<!-- add additional info such as your homepage here, if you want -->
+	<footer>
+		<p>Copyright &copy; 2015 Mateusz Cyraniak. Licensed MIT</p>
+	</footer>
+
+	<!-- Demo template -->
+	<script id='demo-template' type='text/ractive'>
+		<select multiple name="multiple_tags" decorator="tagsinput"></select>
+		
+		<!-- This tag will ignore options set in javascript -->
+		<input name="tags" decorator="tagsinput:{allowDuplicates: false}"></select>
+	</script>
+
+	<!-- Dependencies -->
+	<script src='vendor/ractive/ractive-legacy.js'></script>
+	<script src='src/ractive-decorators-bootstraptags.js'></script>
+
+	<!-- Demo code -->
+	<script id='demo-code'>
+		//Set options for all decorators, that don't have parameters set in template:
+		Ractive.decorators.tagsinput.options = {
+			{
+				allowDuplicates: true,
+				itemValue: 'value',
+				itemText: 'text'
+			}
+		}
+	</script>
+
+	<!-- Insert code into the page -->
+	<script src='demo/prettify.js'></script>
+	<script src='demo/demo.js'></script>
+</body>
+</html>
