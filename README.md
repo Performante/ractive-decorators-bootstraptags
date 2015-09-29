@@ -2,7 +2,7 @@
 
 *Find more Ractive.js plugins at [docs.ractivejs.org/latest/plugins](http://docs.ractivejs.org/latest/plugins)*
 
-[See the demo here.](TODO)
+[See the demo here.](http://performante.github.io/ractive-decorators-bootstraptags/)
 
 ## Usage
 
